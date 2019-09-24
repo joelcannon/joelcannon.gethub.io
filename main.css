@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+
+/* mobile first (large screen below)*/
+
+/* elements */
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+body {
+   font-family: Helvetica, Arial, sans-serif;
+ }
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Lora', serif;
+}
+
+h1 {
+   margin: .67em 0;
+}
+
+a {
+   text-decoration: none;
+   color: #6495ED ;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+a:active {
+   color: #DEB887;
+}
+
+/* body {
+   background-image: url("https://byui-cit.github.io/advcss/images/kidsread-sm.jpg");
+} */
+
+/* header */
+header {
+   background-color: #6495ED;
+   text-align: right;
+   padding: 30px 5%;
+}
+
+hr {
+   margin-top: 0.5em;
+margin-bottom: 0.5em;
+margin-left: auto;
+margin-right: auto;
+}
+
+header ul {
+   list-style-type: none;
+}
+
+header li {
+   margin: 16px 0px;
+}
+
+header a:link,
+header a:visited {
+   color: #FAEBD7;
+}
+
+header a:hover {
+   color: white;
+   text-decoration: underline;
+}
+
+header a:active {
+   color: #DEB887;
+}
+
+/* main */
+main {
+   background-color: #FAEBD7;
+   padding: 30px 5%;
+}
+
+article {
+   background-color: white;
+   /* margin: 30px 20px; */
+   margin-bottom: 10%;
+   padding: 10%;
+   box-shadow:5px 5px 5px lightgrey;  
+}
+
+div.post-date {
+   margin: 8px 0px;
+}
+
+img {
+   display: block;
+   width: 50%;
+   margin-top: 70px;
+   margin-right: auto;
+   margin-left: auto;
+   margin-bottom: 20px;
+}
+
+h2 a {
+   color: black;
+   font-size: 27px;
+}
+
+h2 a:hover {
+   color: #6495ED;
+   text-decoration: underline;
+}
+
+h2 a:active {
+   color: #DEB887;
+}
+
+@media screen and (min-width: 800px) {
+ body div {
+    display: flex;
+    flex-direction: row;
+ }
+
+ header {
+    flex: 1 1 200px;
+ }
+
+ main {
+   flex: 3 3 auto;
+   padding: 50px 10%;
+ }
+}
